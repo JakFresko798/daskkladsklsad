@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ЖальЧтоЯНеПаблоЭскобар_18ИПо8284">
+      <HintPath>..\..\ЖальЧтоЯНеПаблоЭскобар_18ИПо8284\ЖальЧтоЯНеПаблоЭскобар_18ИПо8284\bin\Debug\ЖальЧтоЯНеПаблоЭскобар_18ИПо8284.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

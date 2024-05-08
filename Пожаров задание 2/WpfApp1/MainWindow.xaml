@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Grid.IsSharedSizeScope="True" ResizeMode="NoResize">
+    <Grid Grid.IsSharedSizeScope="True" HorizontalAlignment="Left" Width="800" Height="434" VerticalAlignment="Center">
+        <Rectangle HorizontalAlignment="Left" Height="360" Margin="0,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="180" Fill="#FFB0E8AE"/>
+        <Rectangle HorizontalAlignment="Left" Height="360" Margin="180,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="170" Fill="#FFC0B6E8"/>
+        <Rectangle HorizontalAlignment="Left" Height="360" Margin="350,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="185" Fill="#FFB0E2DC"/>
+        <Rectangle HorizontalAlignment="Left" Height="360" Margin="535,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="265" Fill="#FF909090"/>
+        <Label Content="Помещение&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="170" AutomationProperties.IsColumnHeader="True" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Жилые помещения&#xD;&#xA;&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="180,10,0,0" VerticalAlignment="Top" Width="170" AutomationProperties.IsColumnHeader="True" FontWeight="Bold" Height="42" FontSize="14"/>
+        <Label Content="Офис&#xD;&#xA;" HorizontalAlignment="Left" Margin="350,10,0,0" VerticalAlignment="Top" Width="170" AutomationProperties.IsColumnHeader="True" FontWeight="Bold" Height="42" FontSize="14"/>
+        <Label Content="Список помещений&#xA;" HorizontalAlignment="Left" Margin="535,10,0,0" VerticalAlignment="Top" Width="255" AutomationProperties.IsColumnHeader="True" FontWeight="Bold" Height="42" FontSize="14"/>
+        <Label Content="Длина&#xD;&#xA;" Margin="0,57,713,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Right" Width="85" Grid.IsSharedSizeScope="True"/>
+        <Label Content="Ширина&#xD;&#xA;" Margin="2,91,713,314" Grid.IsSharedSizeScope="True"/>
+        <Label Content="Ширина&#xA;" Margin="180,91,538,314"/>
+        <Label Content="Ширина&#xA;" Margin="350,91,358,314"/>
+        <Label Content="Длина&#xA;" Margin="180,57,538,348"/>
+        <Label Content="Длина&#xA;" Margin="350,57,358,348"/>
+        <Label Content="Число окон&#xD;&#xA;" Margin="180,125,538,280"/>
+        <Label Content="Число розеток" Margin="350,125,358,280"/>
+        <TextBox x:Name="TBWidthO" HorizontalAlignment="Left" Margin="447,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="83" Height="29"  FontSize="14"/>
+        <TextBox x:Name="TBNumS" HorizontalAlignment="Left" Margin="447,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="83" Height="29"  FontSize="14"/>
+        <TextBox x:Name="TBLengthO" HorizontalAlignment="Left" Margin="447,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="83" Height="29"  FontSize="14"/>
+        <TextBox x:Name="TBLengthL" HorizontalAlignment="Left" Margin="262,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="83" Height="29"  FontSize="14"/>
+        <TextBox x:Name="TBWidthL" HorizontalAlignment="Left" Margin="262,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="83" Height="29"  FontSize="14"/>
+        <TextBox x:Name="TBNumW" HorizontalAlignment="Left" Margin="262,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="83" Height="29"  FontSize="14"/>
+        <TextBox x:Name="TBWidthR" HorizontalAlignment="Left" Margin="92,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="83" Height="29"  FontSize="14"/>
+        <TextBox x:Name="TBLenghtR" HorizontalAlignment="Left" Margin="92,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="83" Height="29"  FontSize="14"/>
+        <Label x:Name="ListRooms" Content="" Margin="537,44,3,87"/>
+        <Button x:Name="BAddRoom" Content="Добавить" HorizontalAlignment="Left" Margin="10,385,0,0" VerticalAlignment="Top" Width="129" Height="39"/>
+        <Button x:Name="BAddLivingRoom" Content="Добавить" HorizontalAlignment="Left" Margin="156,385,0,0" VerticalAlignment="Top" Width="130" Height="39" Click="BAddLivingRoom_Click"/>
+        <Button x:Name="BAddOffice" Content="Добавить" HorizontalAlignment="Left" Margin="305,385,0,0" VerticalAlignment="Top" Width="130" Height="39" Click="BAddOffice_Click"/>
+        <Button x:Name="BGetList" Content="Выдать" HorizontalAlignment="Left" Margin="660,385,0,0" VerticalAlignment="Top" Width="130" Height="39" Click="BGetList_Click"/>
+
+    </Grid>
+</Window>
